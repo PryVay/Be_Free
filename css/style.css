@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/*--------------------*/
+.bigred {
+  font-size: 20px;
+  color: red;
+}
+
+.wrapper {
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.header {
+  background-color: #000;
+}
+.header__boody {
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  flex: 1 1 50%;
+  align-items: center;
+}
+.header__logo {
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+}
+.header__logo img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+}
+.header__nav_item {
+  position: relative;
+  text-transform: uppercase;
+  font-family: montserrat;
+  font-weight: 400;
+  font-size: 20px;
+  color: #fff;
+  margin: 0 10px;
+}
+.header__nav_item:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  z-index: 2;
+  width: 0%;
+  height: 2px;
+  background-color: rgb(245, 166, 20);
+  transition: all 0.2s linear;
+}
+.header__nav_item:hover:before {
+  width: 100%;
+}
+
+.main {
+  background-color: #d1c5c5;
+}
+.main__body {
+  display: flex;
+  height: 600px;
+  flex: 0 0;
+}
+.main__back {
+  position: relative;
+  width: 900px;
+  max-height: 100%;
+  background: url("/img/main/1.jpg") 0 0/cover no-repeat;
+}
+.main__info {
+  margin: 40px 0 0 15px;
+}
+.main__info--title {
+  font-family: montserrat;
+  font-weight: 600;
+  font-size: 35px;
+}
+.main__info--subtitle {
+  font-family: montserrat;
+  font-weight: 400;
+  font-size: 18px;
+  width: 300px;
+}
+.main__info--button {
+  margin: 80px 0 0 0;
+  background-color: #000;
+  padding: 10px 20px;
+}
+.main__info--button a {
+  text-transform: uppercase;
+  font-family: montserrat;
+  font-weight: 400;
+  font-size: 22px;
+  color: #fff;
+  align-items: center;
+}
+
+.button {
+  overflow: hidden;
+  display: inline-block;
+  border: #000 1px solid;
+  border-radius: 15px;
+}
