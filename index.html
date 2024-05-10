@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <title>Be_Free</title>
 </head>
 <body>
@@ -15,6 +15,9 @@
             <div class="header__boody">
             <div class="header__logo">
                 <a href="#"><img src="img/header/2.png" alt=""></a>
+            </div>
+            <div class="header__burger">
+                <span></span>
             </div>
             <div class="header__menu">
                 <ul class="header__nav">
@@ -48,6 +51,26 @@
                 
             </div>
         </div>
+        </div>
+        <div class="swupper">
+            <div class="container swupper">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                    <div class="swiper-slide"> <span class="span"> Lorem ipsum dolor </span><br>sit amet consectetur adipisicing elit. Repellat vel eius recusandae exercitationem dolor veritatis in similique cum autem, nobis voluptatum possimus suscipit ratione molestiae quod reiciendis odio. Hic, commodi.</div>
+                    <div class="swiper-slide"><span class="span"></span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat vel eius recusandae exercitationem dolor veritatis in similique cum autem, nobis voluptatum possimus suscipit ratione molestiae quod reiciendis odio. Hic, commodi.</div>
+                    <div class="swiper-slide"><span class="span"></span>Lorem ipsum dolor sit amet consectetur adipisicing </span><br>elit. Repellat vel eius recusandae exercitationem dolor veritatis in similique cum autem, nobis voluptatum possimus suscipit ratione molestiae quod reiciendis odio. Hic, commodi.</div>
+                    <div class="swiper-slide"><span class="span"></span>Lorem ipsum dolor sit amet</span><br> consectetur adipisicing elit. Repellat vel eius recusandae exercitationem dolor veritatis in similique cum autem, nobis voluptatum possimus suscipit ratione molestiae quod reiciendis odio. Hic, commodi.</div>
+                    <div class="swiper-slide"><span class="span"></span>Lorem ipsum dolor sit amet consectetur</span><br> adipisicing elit. Repellat vel eius recusandae exercitationem dolor veritatis in similique cum autem, nobis voluptatum possimus suscipit ratione molestiae quod reiciendis odio. Hic, commodi.</div>
+                    <div class="swiper-slide"><span class="span"></span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat vel eius recusandae exercitationem dolor veritatis in similique cum autem, nobis voluptatum possimus suscipit ratione molestiae quod reiciendis odio. Hic, commodi.</div>
+                    <div class="swiper-slide"><span class="span"></span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span><br> Repellat vel eius recusandae exercitationem dolor veritatis in similique cum autem, nobis voluptatum possimus suscipit ratione molestiae quod reiciendis odio. Hic, commodi.</div>
+                    <div class="swiper-slide"><span class="span"></span>Lorem ipsum dolor sit amet </span><br>consectetur adipisicing elit. Repellat vel eius recusandae exercitationem dolor veritatis in similique cum autem, nobis voluptatum possimus suscipit ratione molestiae quod reiciendis odio. Hic, commodi.</div>
+                    <div class="swiper-slide"><span class="span"></span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat vel eius recusandae</span><br> exercitationem dolor veritatis in similique cum autem, nobis voluptatum possimus suscipit ratione molestiae quod reiciendis odio. Hic, commodi.</div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
         </div>
         <div class="footer">
             <div class="container">               
@@ -86,5 +109,27 @@
         </div>
     </div>
 </div>
+<script src="js/script.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+    var swiper = new Swiper(".mySwiper", {
+      pagination: {
+        el: ".swiper-pagination",
+        type: "progressbar",
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+    $(document).ready(function () {
+    $('.header__burger').click(function (event) {
+       $('.header__burger,.header__menu').toggleClass('active');
+       $('body').toggleClass('lock');
+    });
+ });
+  </script>
+
 </body>
 </html>
